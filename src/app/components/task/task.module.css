@@ -1,0 +1,37 @@
+
+
+.task {
+    background: #C4C4C433;
+    display: flex;
+    gap: 10px;
+    width: 550px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.task.complete{
+    background: #00FF0033;
+}
+.cancelled{
+     text-decoration:line-through;
+}
+.task.overdue{
+    background: #FF000033;
+}
+.date{
+    border:1px solid black;
+    padding:2px 5px;
+}
+
+.checkbox{
+    margin: 0 10px;
+    accent-color: black;
+}
+
+
+@media (max-width: 600px){
+    .task{
+        width:100%;
+    }
+}
